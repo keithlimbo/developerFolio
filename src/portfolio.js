@@ -20,10 +20,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Keith Richard",
-  title: "Hi all, I'm Keith Richard Limbo",
+  username: "Keith Richard Limbo",
+  title: "Flutter Developer | Mobile Application Engineer",
   subTitle: emoji(
-    "Welcome! I'm a passionate Flutter Developer 🚀 with a knack for crafting captivating mobile applications using Flutter, along with some other awesome libraries and frameworks. Let's embark on a journey of innovation and creativity together!"
+    "Flutter Developer with 4+ years of experience architecting and shipping cross-platform mobile applications. I specialize in modernizing production Flutter codebases, BLoC-based state management, performant UI, RESTful APIs, Firebase, and end-to-end App Store and Google Play deployments."
   ),
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -50,11 +50,9 @@ const skillsSection = {
   title: "What I do",
   subTitle: "A DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your mobile applications"
-    ),
-    emoji("⚡ Progressive Mobile Applications"),
-    emoji("⚡ Integration of third party services such as Firebase")
+    emoji("⚡ Cross-platform mobile applications with Flutter and Dart"),
+    emoji("⚡ BLoC pattern and clean architecture for maintainable products"),
+    emoji("⚡ RESTful APIs, Firebase, geolocation, and store deployments")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -66,16 +64,24 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-rocket"
     },
     {
+      skillName: "dart",
+      fontAwesomeClassname: "fas fa-code"
+    },
+    {
+      skillName: "bloc",
+      fontAwesomeClassname: "fas fa-project-diagram"
+    },
+    {
       skillName: "firebase",
       fontAwesomeClassname: "fas fa-fire"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "dio / retrofit",
+      fontAwesomeClassname: "fas fa-exchange-alt"
     },
     {
-      skillName: "sql",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "firebase / maps",
+      fontAwesomeClassname: "fas fa-map-marker-alt"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -89,19 +95,14 @@ const educationInfo = {
     {
       schoolName: "Batangas State University",
       logo: require("./assets/images/Batangas_State_Logo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "2018 - 2022"
+      subHeader:
+        "Bachelor of Science in Information Technology, Major in Service Management",
+      duration: "Aug 2018 - Jul 2022"
       // desc: "Participated in the research of XXX and published 3 papers.",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       // ]
-    },
-    {
-      schoolName: "STI College Lipa",
-      logo: require("./assets/images/Systems_Technology_Institute.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "2016 - 2018"
     }
   ]
 };
@@ -112,16 +113,16 @@ const techStack = {
   viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Flutter / Mobile Architecture",
+      progressPercentage: "95%"
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "APIs / Cloud Integration",
+      progressPercentage: "85%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Testing / Deployment",
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -133,44 +134,54 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Mobile Application Developer",
+      role: "Mobile Application Developer (Flutter)",
+      company: "SD Solutions I.T. Outsourcing, Inc.",
+      companylogo: require("./assets/images/fastsend.png"),
+      date: "Nov 2023 - Present",
+      desc: "Leading Flutter modernization and delivery across production mobile applications in Pasig, Manila.",
+      descBullets: [
+        "Migrated 75% of production Flutter projects to current stable releases and achieved Google Play 16KB page-size compliance.",
+        "Refactored legacy codebases with BLoC state management across 9 production apps.",
+        "Managed end-to-end deployments for bXTRA PH, My Basurero, and QCinema across Google Play and Apple App Store.",
+        "Translated high-fidelity Figma mockups into responsive cross-platform interfaces.",
+        "Integrated RESTful APIs and backend microservices with Dio and Retrofit."
+      ]
+    },
+    {
+      role: "Mobile Application Developer (Flutter)",
       company: "FastSend Mobile Solutions Inc.",
       companylogo: require("./assets/images/fastsend.png"),
       date: "Feb 2023 - Sep 2023",
-      desc: "A mobile wallet that lets users have their cash picked up and delivered anywhere. Fastsend brings you closer to the ones you love.",
+      desc: "Architected core app logic and scalable frontend components for a mobile wallet product in Marikina, Manila.",
       descBullets: [
-        "Employed systematic debugging techniques to ensure optimal application reliability and responsiveness.",
-        "Collaborated with diverse teams for high-quality mobile solutions.",
-        "Mentored interns in Flutter, aiding their integration.",
-        "Implemented robust unit testing for application reliability.",
-        "Maintained detailed documentation and promoted knowledge sharing.",
-        "Overcame technical challenges to meet project goals on time and budget."
+        "Implemented unit testing strategies across 4 critical business logic modules and data models.",
+        "Mentored and onboarded 3 engineering interns on Flutter best practices and Dart standards.",
+        "Authored technical documentation for application code, internal APIs, and development workflows."
       ]
     },
     {
-      role: "Mobile Application Developer",
-      company: "Libera Global",
+      role: "Mobile Application Developer (Flutter)",
+      company: "Libera",
       companylogo: require("./assets/images/libera.jpeg"),
       date: "Sep 2022 - Feb 2023",
-      desc: "Libera Technologies uses the power of data to stimulate demand and grow sales, while sharing these demand insights with suppliers and logistics partners to make sure required inventory is able to be sold and convert to cash.",
+      desc: "Built and maintained mobile product capabilities for a data-driven sales and logistics platform in Makati, Manila.",
       descBullets: [
-        "Designing, developing, and testing software to meet requirements and design specifications in accordance with development standards and procedure.",
-        "Maintaining and growing the mobile app platform’s API library. Includes updating API’s and creating new APIs as needed.",
-        "Fixing bugs and performance problems.",
-        "Cooperating with back-end developers, designers, and the rest of the team to deliver well-architected and high-quality solutions."
+        "Designed and connected 2 new API endpoints for evolving client requirements.",
+        "Diagnosed and resolved critical bugs and memory leaks across legacy modules.",
+        "Enforced clean code and modular architecture standards across code reviews."
       ]
     },
     {
-      role: "Mobile Application Developer",
+      role: "Mobile Application Developer (Flutter) & Intern",
       company: "Nucleio Technologies IT Solutions",
       companylogo: require("./assets/images/nucleio.jpeg"),
-      date: "Jan 2022 - Apr 2022",
-      desc: "Nucleio Technologies IT Solutions is a startup company that was founded last July 23, 2019 by the team of IT professionals that bind together to be an effective global digital service provider.",
+      date: "Jan 2022 - Sep 2022",
+      desc: "Built mobile interfaces and integrations for a digital services startup in Calamba, Laguna.",
       descBullets: [
-        "Built responsive user interfaces from Mockup designs.",
-        "Built REST APIs to process data from Odoo Server and Firebase.",
-        "Learned Flutter to build user interfaces based on Mockup designs.",
-        "Assisted in adding WebRTC into a Flutter app."
+        "Translated Figma wireframes into pixel-perfect Flutter layouts with customized widgets.",
+        "Integrated Google Maps API for real-time geolocation tracking and spatial visualization.",
+        "Engineered APIs connecting Firebase, Odoo ERP, and mobile applications.",
+        "Assisted in WebRTC implementation for real-time audio and video streaming."
       ]
     }
   ]
@@ -191,10 +202,35 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/fun_factory.png"),
-      projectName: "The Fun Factory",
+      image: require("./assets/images/fastsend.png"),
+      projectName: "QCinema - Official Festival App",
       projectDesc:
-        "Developing a mobile application that integrates augmented reality (AR) functionality to showcase 3D models upon the successful completion of a puzzle is a complex and multifaceted task.",
+        "Architected the official QCinema International Film Festival app with digital ticketing, interactive movie schedules, and targeted push notifications.",
+      date: "Oct 2024 - Present",
+      footerLink: []
+    },
+    {
+      image: require("./assets/images/googleAssistantLogo.webp"),
+      projectName: "bXTRA PH Ecosystem",
+      projectDesc:
+        "Developed a connected customer, rider, and vendor app ecosystem with real-time RESTful synchronization, merchant order routing, and in-app navigation. The customer app has surpassed 10,000 downloads with a 4.6-star rating.",
+      date: "Nov 2023 - Present",
+      footerLink: []
+    },
+    {
+      image: require("./assets/images/pwaLogo.webp"),
+      projectName: "My Basurero",
+      projectDesc:
+        "Built a waste management application with instant pickup estimates, an Environmental Points rewards system, and geolocation APIs for residential and enterprise pickups.",
+      date: "Nov 2023 - Present",
+      footerLink: []
+    },
+    {
+      image: require("./assets/images/fun_factory.png"),
+      projectName: "Brix Art - The Fun Factory",
+      projectDesc:
+        "Created an AR mobile app using TensorFlow Lite for camera-based puzzle recognition and custom 3D model rendering after puzzle completion.",
+      date: "Jul 2023 - Sep 2023",
       footerLink: [
         {
           name: "Visit Website",
@@ -338,9 +374,10 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Based in Cuenca, Batangas, Philippines. Open to building reliable cross-platform mobile products and thoughtful digital experiences.",
   number: "+63938-650-8693",
-  email_address: "keithrichardarca.limbo@gmail.com"
+  email_address: "keithrichardarca.limbo@gmail.com",
+  location: "Cuenca, Batangas, Philippines"
 };
 
 // Twitter Section

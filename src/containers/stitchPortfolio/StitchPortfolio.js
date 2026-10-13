@@ -14,49 +14,57 @@ import "./StitchPortfolio.scss";
 const technologies = [
   {
     title: "Mobile Architecture & Client",
-    eyebrow: "RUNTIME / 60FPS",
+    eyebrow: "RUNTIME / CROSS-PLATFORM",
     description:
-      "Interactive mobile experiences with local caching, hardware integrations, and reliable offline behavior.",
-    tags: ["Flutter / Dart", "Firebase", "Responsive UI", "Offline-first"]
+      "Production Flutter applications with BLoC state management, clean architecture, and responsive interfaces translated from Figma.",
+    tags: ["Flutter / Dart", "BLoC", "Clean architecture", "Figma"]
   },
   {
     title: "Backend & Integrations",
-    eyebrow: "CONNECTED / RESTFUL",
+    eyebrow: "CONNECTED / LOW-LATENCY",
     description:
-      "Practical service integrations that keep mobile products connected to the systems behind them.",
-    tags: ["REST APIs", "Python", "SQL", "WebRTC"]
+      "Mobile products connected through RESTful APIs, backend microservices, Firebase, geolocation, and third-party platforms.",
+    tags: ["REST APIs", "Dio / Retrofit", "Firebase", "Google Maps"]
   },
   {
     title: "Delivery & Product Craft",
-    eyebrow: "AUTOMATED / RELIABLE",
+    eyebrow: "DELIVERY / STORE-READY",
     description:
-      "Clean interfaces, systematic debugging, documentation, and testing-oriented delivery.",
-    tags: ["Git", "Unit testing", "Design systems", "Agile delivery"]
+      "End-to-end release workflows, unit testing, documentation, and store compliance across Google Play and Apple App Store.",
+    tags: ["Codemagic", "Unit testing", "App Store Connect", "Agile / Scrum"]
   }
 ];
 
 const projectCards = [
   {
-    name: "The Fun Factory",
-    type: "FEATURED PROJECT",
+    name: bigProjects.projects[0].projectName,
+    type: "OFFICIAL FESTIVAL APP",
     description: bigProjects.projects[0].projectDesc,
-    tags: ["Mobile", "Flutter", "AR / 3D"],
+    tags: ["Flutter", "Digital ticketing", "Push notifications"],
     image: bigProjects.projects[0].image,
-    url: bigProjects.projects[0].footerLink[0].url
+    url: ""
   },
   {
-    name: "FastSend Mobile Solutions",
-    type: "MOBILE WALLET",
-    description: workExperiences.experience[0].desc,
-    tags: ["Flutter", "Mobile wallet", "Reliability"],
-    image: workExperiences.experience[0].companylogo
+    name: bigProjects.projects[1].projectName,
+    type: "CONNECTED APP ECOSYSTEM",
+    description: bigProjects.projects[1].projectDesc,
+    tags: ["Flutter", "REST APIs", "10K+ downloads"],
+    image: bigProjects.projects[1].image
   },
   {
-    name: "Libera Global",
-    type: "DATA-DRIVEN MOBILE PRODUCT",
-    description: workExperiences.experience[1].desc,
-    tags: ["API library", "Mobile", "Performance"],
-    image: workExperiences.experience[1].companylogo
+    name: bigProjects.projects[2].projectName,
+    type: "WASTE MANAGEMENT PLATFORM",
+    description: bigProjects.projects[2].projectDesc,
+    tags: ["Flutter", "Geolocation", "Rewards"],
+    image: bigProjects.projects[2].image
+  },
+  {
+    name: bigProjects.projects[3].projectName,
+    type: "AR MOBILE APPLICATION",
+    description: bigProjects.projects[3].projectDesc,
+    tags: ["TensorFlow Lite", "AR", "3D rendering"],
+    image: bigProjects.projects[3].image,
+    url: bigProjects.projects[3].footerLink[0].url
   }
 ];
 
@@ -136,7 +144,7 @@ function StitchPortfolio() {
               <span>●</span> OPEN TO OPPORTUNITIES
             </p>
             <h1>
-              Building thoughtful mobile experiences with <em>Flutter.</em>
+              Architecting reliable mobile products with <em>Flutter.</em>
             </h1>
             <p className="stitch-lede">{greeting.subTitle}</p>
             <div className="stitch-hero-links">
@@ -160,7 +168,7 @@ function StitchPortfolio() {
               <span className="stitch-signal-dot" />
               <div>
                 <strong>Keith Richard Limbo</strong>
-                <small>Mobile application developer</small>
+                <small>Flutter developer · {contactInfo.location}</small>
               </div>
             </div>
             <div className="stitch-hero-rule" />
@@ -170,12 +178,12 @@ function StitchPortfolio() {
                 <span>PRIMARY CLIENT</span>
               </div>
               <div>
-                <strong>REST / API</strong>
-                <span>INTEGRATION</span>
+                <strong>4+ YRS</strong>
+                <span>EXPERIENCE</span>
               </div>
               <div>
-                <strong>UI / UX</strong>
-                <span>PRODUCT CRAFT</span>
+                <strong>BLoC</strong>
+                <span>STATE MANAGEMENT</span>
               </div>
               <div>
                 <strong>{isHireable ? "OPEN" : "BUSY"}</strong>
