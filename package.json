@@ -1,5 +1,5 @@
 {
-  "homepage": "https://keithlimbo.github.io",
+  "homepage": "https://keithlimbo.github.io/developerFolio",
   "name": "keithlimbo.github.io",
   "version": "0.1.0",
   "private": true,
@@ -24,11 +24,11 @@
     "predeploy": "npm run build",
     "start": "node fetch.js && react-scripts start",
     "build": "node fetch.js && react-scripts build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -b gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
-    "check-format": "prettier -c \"./**/*.{js,css,json,scss}\""
+    "check-format": "prettier -c \"src/**/*.{js,css,json,scss}\" \"public/**/*.{html,json}\" package.json"
   },
   "eslintConfig": {
     "extends": "react-app"

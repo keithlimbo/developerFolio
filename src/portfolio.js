@@ -25,8 +25,7 @@ const greeting = {
   subTitle: emoji(
     "Welcome! I'm a passionate Flutter Developer 🚀 with a knack for crafting captivating mobile applications using Flutter, along with some other awesome libraries and frameworks. Let's embark on a journey of innovation and creativity together!"
   ),
-  resumeLink:
-    "", // Set to empty to hide the button
+  resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -55,9 +54,7 @@ const skillsSection = {
       "⚡ Develop highly interactive Front end / User Interfaces for your mobile applications"
     ),
     emoji("⚡ Progressive Mobile Applications"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase"
-    )
+    emoji("⚡ Integration of third party services such as Firebase")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -93,7 +90,7 @@ const educationInfo = {
       schoolName: "Batangas State University",
       logo: require("./assets/images/Batangas_State_Logo.png"),
       subHeader: "Master of Science in Computer Science",
-      duration: "2018 - 2022",
+      duration: "2018 - 2022"
       // desc: "Participated in the research of XXX and published 3 papers.",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -104,7 +101,7 @@ const educationInfo = {
       schoolName: "STI College Lipa",
       logo: require("./assets/images/Systems_Technology_Institute.png"),
       subHeader: "Bachelor of Science in Computer Science",
-      duration: "2016 - 2018",
+      duration: "2016 - 2018"
     }
   ]
 };
@@ -196,7 +193,8 @@ const bigProjects = {
     {
       image: require("./assets/images/fun_factory.png"),
       projectName: "The Fun Factory",
-      projectDesc: "Developing a mobile application that integrates augmented reality (AR) functionality to showcase 3D models upon the successful completion of a puzzle is a complex and multifaceted task.",
+      projectDesc:
+        "Developing a mobile application that integrates augmented reality (AR) functionality to showcase 3D models upon the successful completion of a puzzle is a complex and multifaceted task.",
       footerLink: [
         {
           name: "Visit Website",
@@ -204,7 +202,7 @@ const bigProjects = {
         }
         //  you can add extra buttons here.
       ]
-    },
+    }
     // {
     //   image: require("./assets/images/nextuLogo.webp"),
     //   projectName: "Nextu",
@@ -270,7 +268,7 @@ const achievementSection = {
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
-        { name: "Certification", url: "" },
+        {name: "Certification", url: ""},
         {
           name: "Final Project",
           url: "https://pakistan-olx-1.firebaseapp.com/"
