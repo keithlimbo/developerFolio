@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/developerFolio/static/css/main.e97049be.css",
-    "main.js": "/developerFolio/static/js/main.77d370c1.js",
+    "main.css": "/developerFolio/static/css/main.79af9099.css",
+    "main.js": "/developerFolio/static/js/main.db358cd1.js",
     "static/media/Montserrat-Regular.ttf": "/developerFolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/Batangas_State_Logo.png": "/developerFolio/static/media/Batangas_State_Logo.cb2cb0c5ce0f277a1b44.png",
     "static/media/Agustina.woff": "/developerFolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
@@ -11,11 +11,11 @@
     "static/media/codeInLogo.webp": "/developerFolio/static/media/codeInLogo.e41a71d512efeda2a55c.webp",
     "static/media/pwaLogo.webp": "/developerFolio/static/media/pwaLogo.8bf2293da0ca66249e37.webp",
     "index.html": "/developerFolio/index.html",
-    "main.e97049be.css.map": "/developerFolio/static/css/main.e97049be.css.map",
-    "main.77d370c1.js.map": "/developerFolio/static/js/main.77d370c1.js.map"
+    "main.79af9099.css.map": "/developerFolio/static/css/main.79af9099.css.map",
+    "main.db358cd1.js.map": "/developerFolio/static/js/main.db358cd1.js.map"
   },
   "entrypoints": [
-    "static/css/main.e97049be.css",
-    "static/js/main.77d370c1.js"
+    "static/css/main.79af9099.css",
+    "static/js/main.db358cd1.js"
   ]
 }
