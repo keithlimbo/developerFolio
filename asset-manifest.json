@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.88cdb5e5.css",
-    "main.js": "/static/js/main.dd9205e4.js",
-    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
-    "static/media/Batangas_State_Logo.png": "/static/media/Batangas_State_Logo.cb2cb0c5ce0f277a1b44.png",
-    "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
-    "static/media/Systems_Technology_Institute.png": "/static/media/Systems_Technology_Institute.c5e85dffb1a371131bc1.png",
-    "static/media/fun_factory.png": "/static/media/fun_factory.0cd9f009bcb6f103e443.png",
-    "static/media/fastsend.png": "/static/media/fastsend.8a16703885970c17a9b0.png",
-    "static/media/googleAssistantLogo.webp": "/static/media/googleAssistantLogo.f720c71652579588524a.webp",
-    "static/media/codeInLogo.webp": "/static/media/codeInLogo.e41a71d512efeda2a55c.webp",
-    "static/media/pwaLogo.webp": "/static/media/pwaLogo.8bf2293da0ca66249e37.webp",
-    "index.html": "/index.html",
-    "main.88cdb5e5.css.map": "/static/css/main.88cdb5e5.css.map",
-    "main.dd9205e4.js.map": "/static/js/main.dd9205e4.js.map"
+    "main.css": "/developerFolio/static/css/main.e97049be.css",
+    "main.js": "/developerFolio/static/js/main.dc406bd2.js",
+    "static/media/Montserrat-Regular.ttf": "/developerFolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/Batangas_State_Logo.png": "/developerFolio/static/media/Batangas_State_Logo.cb2cb0c5ce0f277a1b44.png",
+    "static/media/Agustina.woff": "/developerFolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/Systems_Technology_Institute.png": "/developerFolio/static/media/Systems_Technology_Institute.c5e85dffb1a371131bc1.png",
+    "static/media/fun_factory.png": "/developerFolio/static/media/fun_factory.0cd9f009bcb6f103e443.png",
+    "static/media/fastsend.png": "/developerFolio/static/media/fastsend.8a16703885970c17a9b0.png",
+    "static/media/googleAssistantLogo.webp": "/developerFolio/static/media/googleAssistantLogo.f720c71652579588524a.webp",
+    "static/media/codeInLogo.webp": "/developerFolio/static/media/codeInLogo.e41a71d512efeda2a55c.webp",
+    "static/media/pwaLogo.webp": "/developerFolio/static/media/pwaLogo.8bf2293da0ca66249e37.webp",
+    "index.html": "/developerFolio/index.html",
+    "main.e97049be.css.map": "/developerFolio/static/css/main.e97049be.css.map",
+    "main.dc406bd2.js.map": "/developerFolio/static/js/main.dc406bd2.js.map"
   },
   "entrypoints": [
-    "static/css/main.88cdb5e5.css",
-    "static/js/main.dd9205e4.js"
+    "static/css/main.e97049be.css",
+    "static/js/main.dc406bd2.js"
   ]
 }
