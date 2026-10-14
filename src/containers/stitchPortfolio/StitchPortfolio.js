@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import {
   bigProjects,
   contactInfo,
@@ -41,7 +41,7 @@ const projectCards = [
     type: "OFFICIAL FESTIVAL APP",
     description: bigProjects.projects[0].projectDesc,
     tags: ["Flutter", "Digital ticketing", "Push notifications"],
-    image: bigProjects.projects[0].image,
+    image: null,
     url: ""
   },
   {
@@ -49,14 +49,14 @@ const projectCards = [
     type: "CONNECTED APP ECOSYSTEM",
     description: bigProjects.projects[1].projectDesc,
     tags: ["Flutter", "REST APIs", "10K+ downloads"],
-    image: bigProjects.projects[1].image
+    image: null
   },
   {
     name: bigProjects.projects[2].projectName,
     type: "WASTE MANAGEMENT PLATFORM",
     description: bigProjects.projects[2].projectDesc,
     tags: ["Flutter", "Geolocation", "Rewards"],
-    image: bigProjects.projects[2].image
+    image: null
   },
   {
     name: bigProjects.projects[3].projectName,
@@ -68,7 +68,7 @@ const projectCards = [
   }
 ];
 
-function SectionHeading({index, title, detail}) {
+function SectionHeading({ index, title, detail }) {
   return (
     <div className="stitch-section-heading">
       <span className="stitch-section-index">[{index}]</span>
@@ -83,6 +83,13 @@ function SectionHeading({index, title, detail}) {
 function StitchPortfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("about");
+  const [theme, setTheme] = useState(() => {
+    try {
+      return window.localStorage.getItem("portfolio-theme") || "dark";
+    } catch (error) {
+      return "dark";
+    }
+  });
 
   useEffect(() => {
     const sections = ["about", "projects", "stack", "experience", "contact"];
@@ -91,7 +98,7 @@ function StitchPortfolio() {
         const visible = entries.find(entry => entry.isIntersecting);
         if (visible) setActiveSection(visible.target.id);
       },
-      {rootMargin: "-30% 0px -55%"}
+      { rootMargin: "-30% 0px -55%" }
     );
     sections.forEach(id => {
       const section = document.getElementById(id);
@@ -101,15 +108,24 @@ function StitchPortfolio() {
   }, []);
 
   const closeMenu = () => setIsMenuOpen(false);
+  const toggleTheme = () => {
+    setTheme(currentTheme => (currentTheme === "dark" ? "light" : "dark"));
+  };
+
+  useEffect(() => {
+    try {
+      window.localStorage.setItem("portfolio-theme", theme);
+    } catch (error) {
+      // Theme persistence is optional when storage is unavailable.
+    }
+  }, [theme]);
 
   return (
-    <main className="stitch-site">
+    <main className={`stitch-site ${theme === "light" ? "is-light" : ""}`}>
       <div className="stitch-shell">
         <header className="stitch-header">
           <a className="stitch-brand" href="#about" onClick={closeMenu}>
-            <span>&lt;</span>
-            {greeting.username}
-            <span>/&gt;</span>
+            <span>●</span> {greeting.username}
           </a>
           <button
             className="stitch-menu-button"
@@ -135,6 +151,16 @@ function StitchPortfolio() {
               )
             )}
           </nav>
+          <button
+            className="stitch-theme-toggle"
+            type="button"
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+            aria-pressed={theme === "light"}
+            onClick={toggleTheme}
+          >
+            <span aria-hidden="true">{theme === "dark" ? "☼" : "◐"}</span>
+            {theme === "dark" ? "LIGHT" : "DARK"}
+          </button>
           <span className="stitch-header-status">● AVAILABLE FOR WORK</span>
         </header>
 
@@ -210,7 +236,13 @@ function StitchPortfolio() {
                   <span>0{index + 1}</span>
                 </div>
                 <div className="stitch-project-image">
-                  <img src={project.image} alt="" />
+                  {project.image ? (
+                    <img src={project.image} alt="" />
+                  ) : (
+                    <div className="stitch-project-placeholder">
+                      IMAGE / PLACEHOLDER
+                    </div>
+                  )}
                   <span className="stitch-project-scan">SYSTEM / PROJECT</span>
                 </div>
                 <h3>{project.name}</h3>
